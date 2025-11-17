@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A to Z Insurance Services - RAP Certified Insurance Advisor in Odisha | Motor, Health &amp; Life Insurance</title>
+  <meta name="description" content="RAP certified insurance advisor in Cuttack, Odisha. Get motor insurance, health insurance, and life insurance from leading companies. CSC VLE authorized service provider.">
+  <meta name="keywords" content="motor insurance Cuttack, bike insurance Odisha, car insurance Cuttack, health insurance advisor Cuttack, RAP certified insurance agent, CSC insurance services">
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: #002147;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            /* Logo dimensions: approximately 280px width × 24px height (text-based logo) */
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #fbbf24;
+        }
+
+        .contact-header {
+            display: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #003366;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #1FAA59;
+            color: #FFFFFF;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            height: 60px;
+            min-width: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-primary:hover {
+            background: #178a4a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+        }
+
+        .btn-secondary {
+            background: #0A4ABF;
+            color: #FFFFFF;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            outline: none;
+            height: 60px;
+            min-width: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary:hover {
+            background: #083a9e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+        }
+
+        /* Credentials Section */
+        .credentials {
+            background: #f8fafc;
+            padding: 60px 0;
+        }
+
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .credential-badge {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .credential-badge:hover {
+            transform: translateY(-5px);
+        }
+
+        .badge-icon {
+            width: 60px;
+            height: 60px;
+            background: #3b82f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #002147;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 60px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border-top: 5px solid #3b82f6;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3b82f6, #1e40af);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: white;
+            font-size: 32px;
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #002147;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .service-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e5e7eb;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            background: #f8fafc;
+            padding: 80px 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 28px;
+        }
+
+        /* Partners Section */
+        .partners {
+            padding: 80px 0;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .partner-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .partner-logo {
+            width: 80px;
+            height: 80px;
+            background: #f3f4f6;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+            color: #374151;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: #1e3a8a;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #fbbf24;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #f8fafc;
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #002147;
+            border: none;
+            width: 100%;
+            text-align: left;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #e2e8f0;
+        }
+
+        .faq-answer {
+            padding: 20px;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            color: #fbbf24;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p, .footer-section li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #fbbf24;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 20px;
+            text-align: center;
+            color: #9ca3af;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header-content {
+                justify-content: space-between;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background: #002147;
+                flex-direction: column;
+                gap: 0;
+                text-align: center;
+                width: 200px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                border-radius: 0 0 10px 10px;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-menu li {
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-menu a {
+                display: block;
+                padding: 15px 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .btn-primary, .btn-secondary {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+
+            .service-card {
+                padding: 25px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .contact-form-section .container > div > div {
+                padding: 25px !important;
+            }
+
+            .contact-form-section form > div {
+                grid-template-columns: 1fr !important;
+            }
+
+            .floating-contacts {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .contact-float {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+
+        /* Floating Contact Buttons */
+        .floating-contacts {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .contact-float {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            color: white;
+        }
+
+        .whatsapp-float {
+            background-color: #25d366;
+        }
+
+        .call-float {
+            background-color: #007bff;
+        }
+
+        .contact-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .contact-float:hover.whatsapp-float {
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .contact-float:hover.call-float {
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body><!-- Header -->
+  <header class="header">
+   <div class="container">
+    <div class="header-content">
+     <div class="logo" id="company-name">
+      A to Z Insurance Services
+      <span style="font-size:14px; font-weight:500; display:block; opacity:0.8;">
+       A Unit of A to Z Paid Services (GST Registered)
+      </span>
+     </div>
+     <div class="nav-toggle" onclick="toggleMobileMenu()"><span></span> <span></span> <span></span>
+     </div>
+     <nav>
+      <ul class="nav-menu" id="nav-menu">
+       <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+       <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+       <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+       <li><a href="#partners" onclick="closeMobileMenu()">Partners</a></li>
+       <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+      </ul>
+     </nav>
+    </div>
+   </div>
+  </header><!-- Hero Section -->
+  <section class="hero" id="home">
+   <div class="container">
+    <h1 id="hero-heading">
+     A to Z Insurance Services in Cuttack
+     <br>
+     <span style="font-size:22px; opacity:0.9;">
+      A Unit of A to Z Paid Services (GST Registered)
+     </span>
+    </h1>
+    <p id="hero-subheading">Trusted RAP Certified Insurance Advisor<br>
+     Motor • Health • Life Insurance</p>
+    <div class="cta-buttons"><a href="#quote-form" class="btn-primary">Get Free Insurance Quote</a> <a href="tel:9338888550" class="btn-secondary" id="hero-phone" style="font-size: 22px; font-weight: 900; letter-spacing: 2px; padding: 20px 45px; min-height: 65px;">Call / WhatsApp 933-8888-550</a>
+    </div>
+   </div>
+  </section><!-- Contact Form Section -->
+  <section class="contact-form-section" id="quote-form" style="padding: 60px 0; background: #f8fafc;">
+   <div class="container">
+    <h2 class="section-title">Get Your Free Insurance Quote</h2>
+    <p class="section-subtitle">Fill out the form below and we'll get back to you with the best insurance options</p>
+    <div style="max-width: 600px; margin: 0 auto;">
+     <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      
+<form action="https://formspree.io/f/mnnzokyb" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <input type="text" name="name" placeholder="Your Name" required
+           style="padding: 15px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 16px;">
+    <input type="tel" name="phone" placeholder="Phone Number" required
+           style="padding: 15px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 16px;">
+  </div>
+
+  <input type="email" name="email" placeholder="Email Address"
+         style="padding: 15px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 16px;">
+
+  <select name="insurance_type" required
+          style="padding: 15px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 16px;">
+    <option value="">Select Insurance Type</option>
+    <option value="Motor">Motor Insurance (Bike/Car/Commercial)</option>
+    <option value="Health">Health Insurance (Individual/Family)</option>
+    <option value="Life">Life Insurance (Term/Savings/Child)</option>
+  </select>
+
+  <textarea name="message" placeholder="Additional Details (Vehicle details, coverage needed, etc.)"
+            rows="4"
+            style="padding: 15px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 16px; resize: vertical;"></textarea>
+
+  <input type="hidden" name="_subject" value="New Insurance Enquiry from Website">
+  <input type="hidden" name="_captcha" value="false">
+
+  <button type="submit" class="btn-primary" style="width: 100%; padding: 18px;">
+    Get Free Quote
+  </button>
+
+</form>
+
+     </div>
+    </div>
+   </div>
+  </section><!-- Credentials Section -->
+  <section class="partners" id="partners">
+   <div class="container">
+    <h2 class="section-title">Our Insurance Partners</h2>
+    <p class="section-subtitle">We help you choose suitable plans from multiple leading insurance companies</p>
+    <div class="partners-grid">
+     <div class="partner-card">
+      <div class="partner-logo" style="background:none; box-shadow:none;">
+       <img src="https://i.ibb.co/vCwkGVzn/lic-logo.jpg"
+            alt="LIC Logo"
+            style="width:80px; height:80px; object-fit:contain;">
+      </div>
+      <h4>Life Insurance Corporation</h4>
+     </div>
+     <div class="partner-card">
+      <div class="partner-logo" style="background:none; box-shadow:none;">
+       <img src="https://i.ibb.co/4wnnSwkx/sbi-logo.jpg"
+            alt="SBI Logo"
+            style="width:80px; height:80px; object-fit:contain;">
+      </div>
+      <h4>SBI Life &amp; General</h4>
+     </div>
+     <div class="partner-card">
+      <div class="partner-logo" style="background:none; box-shadow:none;">
+       <img src="https://i.ibb.co/g2bR6PJ/IMG-20251118-WA0002.jpg"
+            alt="NIA Logo"
+            style="width:80px; height:80px; object-fit:contain; border-radius:8px;">
+      </div>
+      <h4>New India Assurance</h4>
+     </div>
+     <div class="partner-card">
+      <div class="partner-logo" style="background:none; box-shadow:none;">
+       <img src="https://i.ibb.co/YB5Nzv2b/oic-logo.jpg"
+            alt="OIC Logo"
+            style="width:80px; height:80px; object-fit:contain;">
+      </div>
+      <h4>Oriental Insurance</h4>
+     </div>
+     <div class="partner-card">
+      <div class="partner-logo" style="background:none; box-shadow:none;">
+        <img src="https://i.ibb.co/Lzbkntmc/hdfc-logo.jpg"
+             alt="HDFC Logo"
+             style="width:80px; height:80px; object-fit:contain;">
+      </div>
+      <h4>HDFC ERGO</h4>
+     </div>
+     <div class="partner-card">
+      <div class="partner-logo" style="background:none; box-shadow:none;">
+        <img src="https://i.ibb.co/hJwpwrG8/icici-logo.jpg"
+             alt="ICICI Logo"
+             style="width:80px; height:80px; object-fit:contain;">
+      </div>
+      <h4>ICICI Lombard</h4>
+     </div>
+     <div class="partner-card">
+      <div class="partner-logo" style="background:none; box-shadow:none;">
+        <img src="https://i.ibb.co/RGBdbmP3/bajaj-logo.jpg"
+             alt="Bajaj Allianz Logo"
+             style="width:80px; height:80px; object-fit:contain;">
+      </div>
+      <h4>Bajaj Allianz</h4>
+     </div>
+     <div class="partner-card">
+      <div class="partner-logo" style="background:none; box-shadow:none;">
+        <img src="https://i.ibb.co/MDV7dJ3B/reliance-logo.jpg"
+             alt="Reliance Logo"
+             style="width:80px; height:80px; object-fit:contain;">
+      </div>
+      <h4>Reliance General</h4>
+     </div>
+     <div class="partner-card">
+      <div class="partner-logo" style="background:none; box-shadow:none;">
+        <img src="https://i.ibb.co/MDWcfv7Y/star-logo.jpg"
+             alt="Star Health Logo"
+             style="width:80px; height:80px; object-fit:contain;">
+      </div>
+      <h4>Star Health</h4>
+     </div>
+     <div class="partner-card">
+      <div class="partner-logo" style="background:none; box-shadow:none;">
+        <img src="https://i.ibb.co/WN2sjpgw/care-logo.jpg"
+             alt="Care Health Logo"
+             style="width:80px; height:80px; object-fit:contain;">
+      </div>
+      <h4>Care Health</h4>
+     </div>
+    </div>
+   </div>
+  </section><section class="credentials" id="about">
+   <div class="container">
+    <h2 class="section-title">Certified &amp; Authorized Insurance Services</h2>
+    <p class="section-subtitle">Your trusted partner with official certifications and authorizations</p>
+    <div class="credentials-grid">
+     <div class="credential-badge">
+      <div class="badge-icon">
+       RAP
+      </div>
+      <h3>RAP Certified</h3>
+      <p>Rural Authorised Person exam passed for insurance services</p>
+     </div>
+     <div class="credential-badge">
+      <div class="badge-icon" style="background:none; box-shadow:none;">
+       <img src="https://i.ibb.co/4gVgFnwp/csc-logo-1.png"
+            alt="CSC Logo"
+            style="width:60px; height:60px; object-fit:contain;">
+      </div>
+      <h3>CSC Associated</h3>
+      <p>Official CSC VLE providing authorized insurance services</p>
+     </div>
+     <div class="credential-badge">
+      <div class="badge-icon">
+       ✓
+      </div>
+      <h3>Authorized Provider</h3>
+      <p>Licensed insurance service provider in Odisha</p>
+     </div>
+     <div class="credential-badge">
+      <div class="badge-icon">
+       ⭐
+      </div>
+      <h3>Local Expert</h3>
+      <p>Trusted advisor serving Cuttack and surrounding areas</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Services Section -->
+  <section class="services" id="services">
+   <div class="container">
+    <h2 class="section-title">Our Insurance Services</h2>
+    <p class="section-subtitle">Comprehensive insurance solutions for all your needs</p>
+    <div class="services-grid">
+     <div class="service-card">
+      <div class="service-icon">
+       🚗
+      </div>
+      <h3>Motor Insurance</h3>
+      <p>Complete vehicle insurance solutions for all types of vehicles</p>
+      <ul class="service-list">
+       <li>Bike Insurance</li>
+       <li>Car Insurance</li>
+       <li>Commercial Vehicle Insurance</li>
+       <li>Truck &amp; Taxi Insurance</li>
+       <li>Third Party &amp; Comprehensive</li>
+      </ul><a href="#quote-form" class="btn-primary" style="margin-top: 20px;">Get Motor Quote</a>
+     </div>
+     <div class="service-card">
+      <div class="service-icon">
+       🏥
+      </div>
+      <h3>Health Insurance</h3>
+      <p>Protect your family's health with comprehensive medical coverage</p>
+      <ul class="service-list">
+       <li>Individual Health Plans</li>
+       <li>Family Floater Plans</li>
+       <li>Senior Citizen Health Plans</li>
+       <li>Critical Illness Cover</li>
+       <li>Cashless Treatment</li>
+      </ul><a href="#quote-form" class="btn-primary" style="margin-top: 20px;">Get Health Quote</a>
+     </div>
+     <div class="service-card">
+      <div class="service-icon">
+       👨‍👩‍👧‍👦
+      </div>
+      <h3>Life Insurance</h3>
+      <p>Secure your family's future with comprehensive life insurance plans</p>
+      <ul class="service-list">
+       <li>Term Insurance</li>
+       <li>Endowment &amp; Savings Plans</li>
+       <li>Child Education Plans</li>
+       <li>Pension &amp; Retirement Plans</li>
+       <li>Investment Linked Plans</li>
+      </ul><a href="#quote-form" class="btn-primary" style="margin-top: 20px;">Get Life Quote</a>
+     </div>
+    </div>
+   </div>
+  </section><!-- Why Choose Us -->
+  <section class="why-choose">
+   <div class="container">
+    <h2 class="section-title">Why Choose A to Z Paid Services?</h2>
+    <p class="section-subtitle">Your trusted insurance partner in Cuttack, Odisha</p>
+    <div class="features-grid">
+     <div class="feature-item">
+      <div class="feature-icon">
+       🎓
+      </div>
+      <h3>RAP Certified &amp; CSC Associated</h3>
+      <p>Official certifications and authorizations for reliable insurance services</p>
+     </div>
+     <div class="feature-item">
+      <div class="feature-icon">
+       🔍
+      </div>
+      <h3>Multi-Company Comparison</h3>
+      <p>Compare plans from multiple leading insurance companies to find the best fit</p>
+     </div>
+     <div class="feature-item">
+      <div class="feature-icon">
+       🤝
+      </div>
+      <h3>Friendly Claim Support</h3>
+      <p>Personal assistance throughout the claim process for hassle-free experience</p>
+     </div>
+     <div class="feature-item">
+      <div class="feature-icon">
+       📍
+      </div>
+      <h3>Local Trusted Advisor</h3>
+      <p>Based in Cuttack, serving the local community with personalized service</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Partners Section -->
+  <!-- Testimonials -->
+  <section class="testimonials">
+   <div class="container">
+    <h2 class="section-title" style="color: white;">What Our Customers Say</h2>
+    <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Real experiences from satisfied customers</p>
+    <div class="testimonials-grid">
+     <div class="testimonial-card">
+      <p class="testimonial-text">"Excellent service for my car insurance renewal. Very professional and helped me get the best rate. Highly recommended!"</p>
+      <div class="testimonial-author">
+       - Rajesh Kumar, Cuttack
+      </div>
+     </div>
+     <div class="testimonial-card">
+      <p class="testimonial-text">"Got my family health insurance through A to Z Paid Services. Great support during claim process. Very trustworthy."</p>
+      <div class="testimonial-author">
+       - Priya Sharma, Tulsipur
+      </div>
+     </div>
+     <div class="testimonial-card">
+      <p class="testimonial-text">"RAP certified advisor who really understands insurance. Helped me choose the right life insurance plan for my family."</p>
+      <div class="testimonial-author">
+       - Manoj Patel, Bhubaneswar
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- FAQ Section -->
+  <section class="faq">
+   <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Common questions about our insurance services</p>
+    <div class="faq-list">
+     <div class="faq-item"><button class="faq-question" onclick="toggleFAQ(this)">What is RAP certification and why is it important?</button>
+      <div class="faq-answer">
+       <p>RAP (Rural Authorised Person) is an official certification for insurance advisors. It ensures that I have passed the required examinations and am authorized to provide insurance services in rural and semi-urban areas like Cuttack.</p>
+      </div>
+     </div>
+     <div class="faq-item"><button class="faq-question" onclick="toggleFAQ(this)">How do I get a quote for my vehicle insurance?</button>
+      <div class="faq-answer">
+       <p>Simply call or WhatsApp us at 9338888550 with your vehicle details. We'll provide you with quotes from multiple insurance companies and help you choose the best option.</p>
+      </div>
+     </div>
+     <div class="faq-item"><button class="faq-question" onclick="toggleFAQ(this)">Do you help with insurance claims?</button>
+      <div class="faq-answer">
+       <p>Yes, we provide complete claim support. From filing the claim to follow-up with the insurance company, we assist you throughout the entire process.</p>
+      </div>
+     </div>
+     <div class="faq-item"><button class="faq-question" onclick="toggleFAQ(this)">What documents are needed for health insurance?</button>
+      <div class="faq-answer">
+       <p>Typically, you need ID proof, address proof, age proof, income proof, and medical reports if any. We'll guide you through the complete documentation process.</p>
+      </div>
+     </div>
+     <div class="faq-item"><button class="faq-question" onclick="toggleFAQ(this)">Can I renew my existing policy through you?</button>
+      <div class="faq-answer">
+       <p>Absolutely! We handle policy renewals for all types of insurance. Contact us before your policy expires for seamless renewal.</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Contact Section -->
+  <section class="contact" id="contact" style="padding: 80px 0; background: #f8fafc;">
+   <div class="container">
+    <h2 class="section-title">Contact Us Today</h2>
+    <p class="section-subtitle">Get your free insurance quote or renew your existing policy</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px;">
+     <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      <h3 style="color: #002147; margin-bottom: 30px;">Get In Touch</h3>
+      <div style="margin-bottom: 20px;"><strong>📞 Mobile:</strong> <a href="tel:9338888550" style="color: #3b82f6; text-decoration: none; margin-left: 10px;" id="contact-phone">+91-933-8888-550</a>
+      </div>
+      <div style="margin-bottom: 20px;"><strong>☎️ Landline:</strong> <a href="tel:06713554640" style="color: #3b82f6; text-decoration: none; margin-left: 10px;">0671-3554640</a>
+      </div>
+      <div style="margin-bottom: 20px;"><strong>📧 Email:</strong> <a href="mailto:manojgatibbi506@gmail.com" style="color: #3b82f6; text-decoration: none; margin-left: 10px;" id="contact-email">manojgatibbi506@gmail.com</a>
+      </div>
+      <div style="margin-bottom: 30px;"><strong>📍 Address:</strong> <span style="margin-left: 10px;" id="contact-address">H.O. Deulasahi Chhak, Tulsipur, Cuttack, Odisha</span>
+      </div>
+      <div style="display: flex; gap: 15px; flex-wrap: wrap;"><a href="tel:9338888550" class="btn-primary">Call Now</a> <a href="https://wa.me/919338888550" target="_blank" class="btn-secondary" style="color: #25d366; border-color: #25d366;">WhatsApp</a>
+      </div>
+     </div>
+     <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      <h3 style="color: #002147; margin-bottom: 30px;">Quick Quote Request</h3>
+      <form onsubmit="handleQuoteRequest(event)" style="display: flex; flex-direction: column; gap: 20px;"><input type="text" placeholder="Your Name" required style="padding: 15px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 16px;"> <input type="tel" placeholder="Phone Number" required style="padding: 15px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 16px;"> <select required style="padding: 15px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 16px;"> <option value="">Select Insurance Type</option> <option value="motor">Motor Insurance</option> <option value="health">Health Insurance</option> <option value="life">Life Insurance</option> </select> <textarea placeholder="Additional Details (Optional)" rows="3" style="padding: 15px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 16px; resize: vertical;"></textarea> <button type="submit" class="btn-primary" style="width: 100%;">Request Free Quote</button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </section><!-- Footer -->
+  <footer class="footer">
+   <div class="container">
+    <div class="footer-content">
+     <div class="footer-section">
+      <h3>A to Z Paid Services</h3>
+      <p>Your trusted RAP certified insurance advisor in Cuttack, Odisha. We provide comprehensive insurance solutions for motor, health, and life insurance.</p>
+      <p><strong>RAP Certified | CSC Associated</strong></p>
+     </div>
+     <div class="footer-section">
+      <h3>Our Services</h3>
+      <ul>
+       <li><a href="#services">Motor Insurance</a></li>
+       <li><a href="#services">Health Insurance</a></li>
+       <li><a href="#services">Life Insurance</a></li>
+       <li><a href="#services">Policy Renewal</a></li>
+       <li><a href="#services">Claim Support</a></li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h3>Contact Info</h3>
+      <p>📱 <a href="tel:9338888550">9338888550</a> (Mobile)</p>
+      <p>☎️ <a href="tel:06713554640">0671-3554640</a> (Landline)</p>
+      <p>📧 <a href="mailto:manojgatibbi506@gmail.com">manojgatibbi506@gmail.com</a></p>
+      <p>📍 H.O. Deulasahi Chhak, Tulsipur, Cuttack, Odisha</p>
+     </div>
+     <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+       <li><a href="#home">Home</a></li>
+       <li><a href="#services">Services</a></li>
+       <li><a href="#about">About Us</a></li>
+       <li><a href="#partners">Partners</a></li>
+       <li><a href="#contact">Contact</a></li>
+      </ul>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <p>© 2024 A-Z Paid Services. All rights reserved. | RAP Certified Insurance Advisor | CSC VLE Authorized</p>
+    </div>
+   </div>
+  </footer><!-- Floating Contact Buttons -->
+  <div class="floating-contacts"><a href="tel:9338888550" class="contact-float call-float" title="Call Now"> 📞 </a> <a href="https://wa.me/919338888550" class="contact-float whatsapp-float" target="_blank" title="Chat on WhatsApp"> 💬 </a>
+  </div>
+  <script>
+        // Default configuration
+        const defaultConfig = {
+            company_name: "A to Z Insurance Services",
+            hero_heading: "A to Z Insurance Services
+A Unit of A to Z Paid Services (GST Registered)",
+            hero_subheading: "Trusted RAP Certified Insurance Advisor
+Motor • Health • Life Insurance",
+            phone_number: "9338888550",
+            email_address: "manojgatibbi506@gmail.com",
+            business_address: "H.O. H.O. Deulasahi Chhak, Tulsipur, Cuttack, Odisha"
+        };
+
+        // FAQ Toggle Function
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const isActive = answer.classList.contains('active');
+            
+            // Close all FAQ answers
+            document.querySelectorAll('.faq-answer').forEach(ans => {
+                ans.classList.remove('active');
+            });
+            
+            // Open clicked FAQ if it wasn't active
+            if (!isActive) {
+                answer.classList.add('active');
+            }
+        }
+
+        // Mobile Menu Functions
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.remove('active');
+        }
+
+        // Quote Request Form Handler
+        function handleQuoteRequest(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const name = event.target.querySelector('input[type="text"]').value;
+            const phone = event.target.querySelector('input[type="tel"]').value;
+            const email = event.target.querySelector('input[type="email"]').value;
+            const insuranceType = event.target.querySelector('select').value;
+            const details = event.target.querySelector('textarea').value;
+            
+            // Create WhatsApp message
+            let message = `Hi! I'm ${name} and I'm interested in ${insuranceType} insurance.\n\nMy Details:\n📞 Phone: ${phone}`;
+            if (email) message += `\n📧 Email: ${email}`;
+            if (details) message += `\n📝 Additional Details: ${details}`;
+            message += `\n\nPlease provide me with a quote. Thank you!`;
+            
+            const whatsappUrl = `https://wa.me/919338888550?text=${encodeURIComponent(message)}`;
+            
+            // Open WhatsApp
+            window.open(whatsappUrl, '_blank');
+            
+            // Show success message
+            const submitButton = event.target.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Redirecting to WhatsApp...';
+            submitButton.style.background = '#10b981';
+            
+            setTimeout(() => {
+                submitButton.textContent = originalText;
+                submitButton.style.background = '#fbbf24';
+                event.target.reset();
+            }, 3000);
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Element SDK Configuration
+        async function onConfigChange(config) {
+            // Update company name
+            const companyNameElement = document.getElementById('company-name');
+            if (companyNameElement) {
+                companyNameElement.textContent = config.company_name || defaultConfig.company_name;
+            }
+
+            // Update hero heading
+            const heroHeadingElement = document.getElementById('hero-heading');
+            if (heroHeadingElement) {
+                heroHeadingElement.textContent = config.hero_heading || defaultConfig.hero_heading;
+            }
+
+            // Update hero subheading
+            const heroSubheadingElement = document.getElementById('hero-subheading');
+            if (heroSubheadingElement) {
+                const subheadingText = config.hero_subheading || defaultConfig.hero_subheading;
+                heroSubheadingElement.innerHTML = subheadingText.replace(/\n/g, '<br>');
+            }
+
+            // Update phone numbers
+            const phoneNumber = config.phone_number || defaultConfig.phone_number;
+            document.querySelectorAll('#header-phone, #hero-phone, #contact-phone').forEach(el => {
+                if (el.tagName === 'A') {
+                    el.href = `tel:${phoneNumber}`;
+                    if (el.id === 'header-phone') {
+                        el.textContent = `📞 ${phoneNumber}`;
+                    } else {
+                        el.textContent = phoneNumber;
+                    }
+                }
+            });
+
+            // Update email
+            const emailElement = document.getElementById('contact-email');
+            if (emailElement) {
+                const email = config.email_address || defaultConfig.email_address;
+                emailElement.href = `mailto:${email}`;
+                emailElement.textContent = email;
+            }
+
+            // Update address
+            const addressElement = document.getElementById('contact-address');
+            if (addressElement) {
+                addressElement.textContent = config.business_address || defaultConfig.business_address;
+            }
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [],
+                borderables: [],
+                fontEditable: undefined,
+                fontSizeable: undefined
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["company_name", config.company_name || defaultConfig.company_name],
+                ["hero_heading", config.hero_heading || defaultConfig.hero_heading],
+                ["hero_subheading", config.hero_subheading || defaultConfig.hero_subheading],
+                ["phone_number", config.phone_number || defaultConfig.phone_number],
+                ["email_address", config.email_address || defaultConfig.email_address],
+                ["business_address", config.business_address || defaultConfig.business_address]
+            ]);
+        }
+
+        // Initialize Element SDK
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99fc10f7a4317a0d',t:'MTc2MzM0OTM1NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+<script>
+async function detectCity() {
+    try {
+        let res = await fetch("https://ipapi.co/json/");
+        let data = await res.json();
+        let city = data.city || "Your City";
+
+        const heroHeading = document.getElementById("hero-heading");
+        if (heroHeading) {
+            heroHeading.innerHTML = `A to Z Insurance Services in ${city} <br>
+            <span style="font-size:22px; opacity:0.9;">
+             A Unit of A to Z Paid Services (GST Registered)
+            </span>`;
+        }
+
+        const subHeading = document.getElementById("hero-subheading");
+        if (subHeading) {
+            subHeading.innerHTML = `Trusted RAP Certified Insurance Advisor<br>Motor • Health • Life Insurance in ${city}`;
+        }
+
+        document.title = `A to Z Insurance Services in ${city} | Motor, Health & Life Insurance`;
+
+        const metaDesc = document.querySelector("meta[name='description']");
+        if (metaDesc) {
+            metaDesc.setAttribute(
+                "content",
+                `RAP certified insurance advisor in ${city}. Get motor, health, and life insurance at best premium rates.`
+            );
+        }
+    } catch (e) {
+        console.log("Location load failed", e);
+    }
+}
+
+detectCity();
+</script>
+
+</body>
+</html>
